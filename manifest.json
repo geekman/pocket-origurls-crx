@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"description": "Makes Pocket URLs point directly to original URL",
+	"name": "Pocket Original URLs",
+	"version": "1.0", 
+
+	// this makes sure there's no icons in the toolbars
+	"converted_from_user_script": true,
+	"content_scripts": [ {
+		"js": [ "script.js" ],
+		"matches": [ "https://getpocket.com/a/*/list/" ],
+		"run_at": "document_idle"
+	} ]
+}
